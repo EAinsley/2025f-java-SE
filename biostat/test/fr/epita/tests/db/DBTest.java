@@ -16,7 +16,7 @@ public class DBTest {
                         age int
                     )                        
                 """);
-        boolean executed = preparedStatement.execute();
+        preparedStatement.execute();
 
         String insertQuery = """
                 INSERT INTO BIOSTATS(name, sex, age) values ('thomas', 'M', 39)
